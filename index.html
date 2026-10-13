@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Talker Agent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="badge">VOICE TALKER AGENT</div>
+    <h1>Talk to the Agent</h1>
+    <p class="subtitle">Say what you want. The agent listens and replies with one short voice response.</p>
+
+    <button id="talkBtn" class="talk-btn">
+      <span class="mic">🎙️</span>
+      <span id="buttonText">Start Talking</span>
+    </button>
+
+    <div id="status" class="status">Ready</div>
+
+    <section class="card">
+      <div class="label">YOU SAID</div>
+      <div id="transcript" class="value muted">Nothing yet...</div>
+    </section>
+
+    <section class="card">
+      <div class="label">AGENT</div>
+      <div id="response" class="value muted">Waiting for your request...</div>
+    </section>
+
+    <p class="hint">Example: “I want a yellow shirt”</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
